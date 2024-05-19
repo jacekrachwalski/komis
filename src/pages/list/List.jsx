@@ -1,7 +1,18 @@
 import "./list.scss";
+import Siedebar from "../../components/sidebar/Sidebar";
+import Navbar from "../../components/navbar/Navbar";
+import Datatable from "../../components/datatable/Datatable";
 
 const List = () => {
-  return <div>Lista</div>;
+  return (
+    <div className="list">
+      <Siedebar />
+      <div className="listContainer">
+        <Navbar />
+        <Datatable />
+      </div>
+    </div>
+  );
 };
 
 export default List;
