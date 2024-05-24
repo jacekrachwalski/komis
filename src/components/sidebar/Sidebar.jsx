@@ -12,12 +12,15 @@ import SettingsApplicationsIcon from "@mui/icons-material/SettingsApplications";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import BuildOutlinedIcon from "@mui/icons-material/BuildOutlined";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="top">
-        <span className="logo">CarCenter</span>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <span className="logo">CarCenter</span>
+        </Link>
       </div>
       <hr />
       <div className="center">
@@ -28,18 +31,22 @@ const Sidebar = () => {
             <span>Panel użytkownika</span>
           </li>
           <p className="title">KARTOTEKI</p>
-          <li>
-            <PersonOutlineOutlinedIcon className="icon" />
-            <span>Klienci</span>
-          </li>
+          <Link to="/users" style={{ textDecoration: "none" }}>
+            <li>
+              <PersonOutlineOutlinedIcon className="icon" />
+              <span>Klienci</span>
+            </li>
+          </Link>
           <li>
             <StoreIcon className="icon" />
             <span>Magazyn</span>
           </li>
-          <li>
-            <CreditCardIcon className="icon" />
-            <span>Sprzedaż</span>
-          </li>
+          <Link to="/products" style={{ textDecoration: "none" }}>
+            <li>
+              <CreditCardIcon className="icon" />
+              <span>Sprzedaż</span>
+            </li>
+          </Link>
           <li>
             <LocalShippingIcon className="icon" />
             <span>Części</span>
