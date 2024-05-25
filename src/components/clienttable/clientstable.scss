@@ -1,8 +1,8 @@
-.datatable {
+.clientstable {
   height: 700px;
   padding: 20px;
 
-  .datatableTitle {
+  .clientstableTitle {
     //width: 100%;
     font-size: 24px;
     color: gray;
@@ -36,17 +36,17 @@
     padding: 5px;
     border-radius: 5px;
 
-    &.aktywny {
+    &.wolny {
       background-color: rgba(0, 128, 0, 0.05);
       color: green;
     }
 
-    &.urlop {
+    &.rezerwacja {
       background-color: rgba(255, 217, 0, 0.05);
       color: goldenrod;
     }
 
-    &.choroba {
+    &.serwis {
       background-color: rgba(255, 0, 0, 0.05);
       color: crimson;
     }

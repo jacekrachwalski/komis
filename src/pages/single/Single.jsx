@@ -3,6 +3,7 @@ import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
 import Chart from "../../components/chart/Chart";
 import List from "../../components/table/Table";
+import ProfilImage from "../../images/user1.jpg";
 
 const Single = () => {
   return (
@@ -15,30 +16,26 @@ const Single = () => {
             <div className="editButton">Edycja</div>
             <h1 className="title">Informacje</h1>
             <div className="item">
-              <img
-                src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
-                alt=""
-                className="itemImg"
-              />
+              <img src={ProfilImage} alt="" className="itemImg" />
               <div className="details">
-                <h1 className="itemTitle">Jane Doe</h1>
+                <h1 className="itemTitle">Anna Nowak</h1>
+                <div className="detailItem">
+                  <span className="itemKey">Stanowisko:</span>
+                  <span className="itemValue">Handlowiec</span>
+                </div>
                 <div className="detailItem">
                   <span className="itemKey">Email:</span>
-                  <span className="itemValue">janedoe@gmail.com</span>
+                  <span className="itemValue">nowak.nowak@carcenter.pl</span>
                 </div>
                 <div className="detailItem">
-                  <span className="itemKey">Phone:</span>
-                  <span className="itemValue">+1 2345 67 89</span>
+                  <span className="itemKey">Telefon:</span>
+                  <span className="itemValue">+48 604 467 789</span>
                 </div>
                 <div className="detailItem">
-                  <span className="itemKey">Address:</span>
+                  <span className="itemKey">Adres:</span>
                   <span className="itemValue">
-                    Elton St. 234 Garden Yd. NewYork
+                    ul. Prosta 21, 00-230 Warszawa
                   </span>
-                </div>
-                <div className="detailItem">
-                  <span className="itemKey">Country:</span>
-                  <span className="itemValue">USA</span>
                 </div>
               </div>
             </div>

@@ -21,7 +21,7 @@ const List = () => {
     },
     {
       id: 2235235,
-      product: "Mercede-Benz E220",
+      product: "Mercedes-Benz E220",
       img: "https://webapi.mojsiuk.csflow.pl/car-photo/7678/T03GTdkqD3QyCBc7.jpg",
       customer: "Krzysztof Kwiatkowski",
       date: "28-04-2024",
