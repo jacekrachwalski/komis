@@ -91,10 +91,13 @@ const Sidebar = () => {
             <SettingsApplicationsIcon className="icon" />
             <span>Ustawienia</span>
           </li>
-          <li>
-            <ExitToAppIcon className="icon" />
-            <span>Wyloguj</span>
-          </li>
+
+          <Link to="/login" style={{ textDecoration: "none" }}>
+            <li>
+              <ExitToAppIcon className="icon" />
+              <span>Wyloguj</span>
+            </li>
+          </Link>
         </ul>
       </div>
       <div className="bottom">
