@@ -46,7 +46,7 @@ const Sidebar = () => {
             </li>
           </Link>
 
-          <Link to="/" style={{ textDecoration: "none" }}>
+          <Link to="/sell" style={{ textDecoration: "none" }}>
             <li>
               <CreditCardIcon className="icon" />
               <span>Sprzedaż</span>
@@ -63,7 +63,7 @@ const Sidebar = () => {
           <p className="title">DODATKI</p>
           <li>
             <InsertChartIcon className="icon" />
-            <span>Raporty</span>
+            <span>Terminarz</span>
           </li>
           <li>
             <NotificationsNoneIcon className="icon" />

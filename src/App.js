@@ -4,13 +4,14 @@ import List from "./pages/list/List";
 import Single from "./pages/single/Single";
 import New from "./pages/new/New";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { productInputs, userInputs } from "./formSource";
+import { clientInputs, productInputs, userInputs } from "./formSource";
 import Products from "./pages/products/Products";
 import Clients from "./pages/clients/Clients";
+import Sell from "./pages/sell/Sell";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}></Route>
@@ -44,10 +45,17 @@ function App() {
             <Route
               path="new"
               element={
-                <New
-                  inputs={productInputs}
-                  title="Dodawanie nowego samochodu"
-                />
+                <New inputs={clientInputs} title="Dodawanie nowego klienta" />
+              }
+            ></Route>
+          </Route>
+          <Route path="sell">
+            <Route index element={<Sell />} />
+            <Route path=":sellId" element={<Single />}></Route>
+            <Route
+              path="new"
+              element={
+                <New inputs={productInputs} title="Dodawanie nowej faktury" />
               }
             ></Route>
           </Route>

@@ -15,7 +15,7 @@ export const userInputs = [
     id: 3,
     label: "Email",
     type: "mail",
-    placeholder: "john.nowak@gmail.com",
+    placeholder: "jan.nowak@gmail.com",
   },
   {
     id: 4,
@@ -108,5 +108,74 @@ export const productInputs = [
     label: "Status",
     type: "text",
     placeholder: "wolny, rezerwacja, serwis",
+  },
+];
+
+export const clientInputs = [
+  {
+    id: 1,
+    label: "Nazwa firmy",
+    type: "text",
+    placeholder: "PHU Jan Kowalski",
+  },
+  {
+    id: 2,
+    label: "Imie",
+    type: "text",
+    placeholder: "Jan",
+  },
+  {
+    id: 3,
+    label: "Nazwisko",
+    type: "text",
+    placeholder: "Kowalski",
+  },
+  {
+    id: 4,
+    label: "Ulica",
+    type: "text",
+    placeholder: "Krótka",
+  },
+  {
+    id: 5,
+    label: "Numer domu",
+    type: "text",
+    placeholder: "15",
+  },
+  {
+    id: 6,
+    label: "Kod pocztowy",
+    type: "text",
+    placeholder: "00-950",
+  },
+  {
+    id: 7,
+    label: "Miejscowość",
+    type: "text",
+    placeholder: "Warszawa",
+  },
+  {
+    id: 8,
+    label: "Telefon",
+    type: "text",
+    placeholder: "+48 600 100 100",
+  },
+  {
+    id: 9,
+    label: "Email",
+    type: "text",
+    placeholder: "jan.kowalski@gmail.com",
+  },
+  {
+    id: 10,
+    label: "PESEL",
+    type: "text",
+    placeholder: "",
+  },
+  {
+    id: 11,
+    label: "NIP",
+    type: "text",
+    placeholder: "",
   },
 ];

@@ -44,15 +44,17 @@ const Login = () => {
               control={<Checkbox name="checkedB" color="primary" />}
               label="Zapamiętaj mnie"
             />
-            <Button
-              type="submit"
-              color="primary"
-              variant="contained"
-              className="buttonstyle"
-              fullWidth
-            >
-              Zaloguj
-            </Button>
+            <Link href="/">
+              <Button
+                type="submit"
+                color="primary"
+                variant="contained"
+                className="buttonstyle"
+                fullWidth
+              >
+                Zaloguj
+              </Button>
+            </Link>
             <Typography>
               <Link href="#">Zapomniałeś hasła?</Link>
             </Typography>
