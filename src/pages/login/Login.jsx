@@ -24,7 +24,7 @@ const Login = () => {
               <Avatar className="avatarstyle">
                 <LockOpenIcon />
               </Avatar>
-              <h2>Logowanie</h2>
+              <h2>CarCenter - Logowanie</h2>
             </Grid>
             <TextField
               className="username"

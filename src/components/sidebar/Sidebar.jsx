@@ -61,14 +61,18 @@ const Sidebar = () => {
           </Link>
 
           <p className="title">DODATKI</p>
-          <li>
-            <InsertChartIcon className="icon" />
-            <span>Terminarz</span>
-          </li>
-          <li>
-            <NotificationsNoneIcon className="icon" />
-            <span>Powiadomienia</span>
-          </li>
+          <Link to="/schedulerpage" style={{ textDecoration: "none" }}>
+            <li>
+              <InsertChartIcon className="icon" />
+              <span>Terminarz</span>
+            </li>
+          </Link>
+          <Link to="/tasks" style={{ textDecoration: "none" }}>
+            <li>
+              <NotificationsNoneIcon className="icon" />
+              <span>Lista zadań</span>
+            </li>
+          </Link>
           <p className="title">SERWIS</p>
           <li>
             <MonitorHeartIcon className="icon" />

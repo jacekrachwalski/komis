@@ -8,6 +8,14 @@ import { clientInputs, productInputs, userInputs } from "./formSource";
 import Products from "./pages/products/Products";
 import Clients from "./pages/clients/Clients";
 import Sell from "./pages/sell/Sell";
+import SchedulerPage from "./pages/schedulerPage/SchedulerPage";
+import Tasks from "./pages/tasks/Tasks";
+
+import { registerLicense } from "@syncfusion/ej2-base";
+
+registerLicense(
+  "Ngo9BigBOggjHTQxAR8/V1NCaF5cXmZCf1FpRmJGdld5fUVHYVZUTXxaS00DNHVRdkdnWXlfdHVWQmJZU0J/W0U="
+);
 
 function App() {
   return (
@@ -59,6 +67,8 @@ function App() {
               }
             ></Route>
           </Route>
+          <Route path="schedulerpage" element={<SchedulerPage />} />
+          <Route path="tasks" element={<Tasks />} />
         </Routes>
       </BrowserRouter>
     </div>
